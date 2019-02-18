@@ -1,0 +1,14 @@
+﻿<h2>Welcome to the Basic Coffee Shop! </h2>
+@if (ViewBag.CurrentUser == null)
+{
+    @Html.ActionLink("Register Users", "RegisterUsers", "home")
+}
+ else if(ViewBag.CurrentUser == null)
+ {
+ <p>Hello, @ViewBag.CurrentUser.FirstName</p>
+ }
+
+else
+{
+
+}

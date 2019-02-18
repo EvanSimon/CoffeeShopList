@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "UserDetails";
+}
+<h2>Welcome, @ViewBag.CurrentUser.FirstName!</h2>
+@if (ViewBag.Current != null)
+{
+    @Html.ActionLink("Logout User", "LogOut", "Home")
+}

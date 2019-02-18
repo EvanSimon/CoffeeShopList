@@ -1,0 +1,18 @@
+﻿
+
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var item in ViewBag.ItemList)
+    {
+        <tr>
+            <td>@item.ItemName</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+            <td><a href="/Home/AddItem?itemName=@item.ItemName"> Add item to Cart</a></td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "RegisterUsers";
+}
+
+<h2>RegistrationPage</h2>
+
+<form action="LoginPage" method="post" class="pure-form">
+    <label class="control-label">First Name</label> <input id="FirstName" type="text" name="FirstName" class="form-control" placeholder="John" pattern="^[a-zA-Z]{2,}$" />
+    <label class="control-label">Last Name</label> <input id="LastName" type="text" name="LastName" class="form-control" placeholder="Adams" pattern="^[a-zA-Z]{2,}$" />
+    <label class="control-label">Email</label> <input id="Email" type="email" name="Email" class="form-control" placeholder="JohnAdams@gmail.com" />
+    <label class="control-label">Password</label> <input id="Password" type="password" name="Password" class="form-control" placeholder="Hsdhslkjdf289" pattern="(?=.*[0-9])(?=.*[a-z])([a-z0-9]+)" />
+    <label class="control-label">Phone Number</label> <input id="PhoneNumber" type="Number" name="PhoneNumber" class="form-control" placeholder="555-555-5555" pattern="^\d{10}" />
+    <label class="control-label">Birthday</label> <input id="Birthday" type="date" name="Birthday" class="form-control" placeholder="00/00/0000" />
+    <label>Gender:<input type="radio" name="gender" />Male</label><label><input type="radio" name="gender" />Female</label><label><input type="radio" name="gender" />Other</label><br />
+    <select id="dropdowntipo" name="EmploymentType">
+        <option value="FullTime">Full Time</option>
+        <option value="PartTime">Part Time</option>
+        <option value="Contract">Contract</option>
+    </select>
+    <br />
+    <input type="submit" value="Sign Up!" class="btn-default" />
+
+</form>
